@@ -26,3 +26,10 @@ function decimalToBinary($decimalValue) {
     }
     return strrev($i);
 }
+
+function palindrome($sentence) {
+    $input = $sentence;
+    $result = strrev($input);
+
+    return $result;
+}

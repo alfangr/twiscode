@@ -1,6 +1,6 @@
 <?php
 header("Content-Type:application/json");
-require "../function/convert-number.php";
+require "../function/function.php";
 
 if(!empty($_GET['decimal'])) {
 	$decimalValue = $_GET['decimal'];

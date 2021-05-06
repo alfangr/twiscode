@@ -2,14 +2,14 @@
 header("Content-Type:application/json");
 require "../function/function.php";
 
-if(!empty($_GET['binary'])) {
-	$binaryValue = $_GET['binary'];
-	$result = binaryToDecimal($binaryValue);
+if(!empty($_GET['sentence'])) {
+	$sentence = $_GET['sentence'];
+	$result = palindrome($sentence);
 	
 	if(empty($result)) {
-		response(200, "Please fill binary value" ,NULL);
+		response(200, "Please fill decimal value" ,NULL);
 	} else {
-		response(200, "Convert binary to decimal successfully!", $result);
+		response(200, "Convert decimal to binary successfully!", $result);
 	}
 } else {
 	response(400,"Invalid Request",NULL);
